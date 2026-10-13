@@ -131,8 +131,8 @@ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ari
 .survey-card p{font-size:.86rem;color:#445363;margin:0 0 10px}
 .survey-card strong{color:#0f3460}
 .survey-highlight{padding:11px 12px;background:#e7f4fa;border-radius:10px;color:#27475b;font-size:.85rem;margin:10px 0}
-.survey-highlight strong{display:block;margin-bottom:3px}
-.survey-note{font-size:.82rem;font-weight:700;color:#0f3460;background:#fff7dc;border:1px solid #f1d982;border-radius:9px;padding:10px 11px}
+.survey-highlight strong{display:block;margin-bottom:3px}.survey-highlight .income-definition{background:#fff0bd;border:1px solid #e7bd49;border-radius:7px;padding:8px 9px;color:#5b4108}
+.survey-note{font-size:.82rem;font-weight:600;color:#20583b;background:#edf8f0;border:1px solid #b6dfc2;border-radius:9px;padding:10px 11px}.survey-note strong{color:#174d30}
 
 /* Modal */
 .modal-overlay{position:fixed;inset:0;background:rgba(7,19,35,.70);z-index:1000;display:none;align-items:center;justify-content:center;padding:12px}
@@ -252,20 +252,6 @@ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ari
 <body>
 <div class="container">
 
-  <!-- TOP JOIN / RESERVE CONTROLS -->
-  <section class="card start-card">
-    <h2>Here’s Your Next Step</h2>
-    <p id="topIntro">Welcome, and thank you for finding time to join.</p>
-    <button class="start-btn join-control" id="startBtnTop" type="button">
-      CLICK HERE TO START WATCHING THE PRESENTATION
-    </button>
-    <a class="reserve-btn reserve-control" id="reserveBtnTop"
-       href="https://aloha-hawaii-tours.github.io/spot-reservation/" aria-disabled="true">
-      RESERVE YOUR SPOT FOR THE NEXT SESSION
-    </a>
-    <p class="availability-msg" id="availabilityTop" aria-live="polite"></p>
-  </section>
-
   <!-- CRUISE HERO -->
   <section class="card hero">
     <img class="hero-bg"
@@ -279,11 +265,29 @@ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ari
     </div>
   </section>
 
+
+
   <!-- WELCOME -->
   <section class="welcome card">
     <h2>Welcome &amp; Thank You for Joining</h2>
-    <p>Your Cruise Certificate will be released via email after the session.</p>
+    <p>Your Cruise Certificate will be emailed after you complete the presentation. Choose below to join now or reserve a future session.</p>
   </section>
+
+  <!-- TOP JOIN / RESERVE CONTROLS -->
+  <section class="card start-card">
+    <h2>Ready to Join?</h2>
+    <p id="topIntro">Watch the approximately 45-minute presentation to receive your Cruise Certificate by email.</p>
+    <button class="start-btn join-control" id="startBtnTop" type="button">
+      JOIN THE LIVE PRESENTATION →
+    </button>
+    <a class="reserve-btn reserve-control" id="reserveBtnTop"
+       href="https://aloha-hawaii-tours.github.io/spot-reservation/" aria-disabled="true">
+      RESERVE A SPOT FOR ANOTHER SESSION →
+    </a>
+    <p class="availability-msg" id="availabilityTop" aria-live="polite"></p>
+  </section>
+
+
 
   <!-- NEW: PULSATING CERTIFICATE MESSAGE -->
   <section class="certificate-pulse" aria-label="Cruise certificate information">
@@ -292,13 +296,10 @@ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ari
       NOT A TIMESHARE — NO FEE TO ATTEND!
     </strong>
     <p class="certificate-message">
-      You are <strong>not</strong> not required to buy anything or join a timeshare program to receive your Cruise Certificate.
-      <br><br>
-      Simply <strong>stay until the end of the presentation</strong>, which takes approximately <strong>45 minutes</strong>.
-      Once you complete the session, your Cruise Certificate will be sent to your email.
+      This is <strong>not a timeshare presentation</strong>. As a thank-you for your time, your Cruise Certificate will be sent by email after you <strong>stay through the approximately 45-minute presentation</strong> and follow the host’s instructions.
     </p>
     <strong class="certificate-footer">
-      Stay until the end • Complete the presentation • Receive your certificate by email
+      Join the presentation • Stay until the end • Receive your certificate by email
     </strong>
   </section>
 
@@ -342,31 +343,31 @@ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ari
       <div class="survey-badge">QUICK CHECK-IN SURVEY</div>
       <h2>One Quick Step When You Join</h2>
 
-      <p>When you join the presentation, you'll be asked to complete a short participant survey. This simply helps us get to know our audience and understand who we're presenting to.</p>
-
-      <p>Some questions may include your <strong>total household income</strong> and <strong>residency/citizenship</strong>. For household income, please consider the <strong>combined income of everyone</strong> in your household, including yourself, your spouse/partner, or other contributing family members (<strong>ideally $50,000/year</strong>).</p>
+      <p>When you join, please complete a brief audience check-in. It may ask about U.S./Canadian residency and <strong>combined annual household income</strong>.</p>
 
       <div class="survey-highlight">
-        <strong>The survey does not affect your ability to join the presentation.</strong>
-        Everyone is welcome to attend!
+        <strong>What does combined annual household income mean?</strong>
+        <strong class="income-definition">The total income of you, your spouse or partner, and contributing family members.</strong>
       </div>
 
+      <p><strong>Ideally above $50,000/year.</strong> This is a guideline, not a requirement to participate.</p>
+
       <div class="survey-note">
-        Please complete the short check-in when Zoom opens so the host can check you in.
+        Your answers will <strong>not affect your eligibility to participate—you are already invited.</strong> These questions help us profile our audience for research purposes. You can review and answer them when the presentation opens; there’s nothing else to fill out on this page.
       </div>
     </div>
   </section>
 
   <!-- BOTTOM JOIN / RESERVE CONTROLS -->
   <section class="card start-card">
-    <h2>Here’s Your Next Step</h2>
-    <p id="bottomIntro">Welcome, and thank you for finding time to join.</p>
+    <h2>Ready to Join?</h2>
+    <p id="bottomIntro">Watch the approximately 45-minute presentation to receive your Cruise Certificate by email.</p>
     <button class="start-btn join-control" id="startBtnBottom" type="button">
-      CLICK HERE TO START WATCHING THE PRESENTATION
+      JOIN THE LIVE PRESENTATION →
     </button>
     <a class="reserve-btn reserve-control" id="reserveBtnBottom"
        href="https://aloha-hawaii-tours.github.io/spot-reservation/" aria-disabled="true">
-      RESERVE YOUR SPOT FOR THE NEXT SESSION
+      RESERVE A SPOT FOR ANOTHER SESSION →
     </a>
     <p class="availability-msg" id="availabilityBottom" aria-live="polite"></p>
   </section>
@@ -419,32 +420,39 @@ body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Ari
         </div>
       </div>
 
-      <!-- WIDE-SCREEN EMAIL STEP -->
+      <!-- WIDE-SCREEN OPTIONS: DIRECT BROWSER ACCESS OR OPTIONAL EMAIL COPY -->
       <div id="wideStep" style="display:none">
-        <h3>Send Me the Zoom Details</h3>
+        <h3>Watch on Your Laptop, Desktop or Tablet</h3>
 
         <div class="bonus" style="margin:0 0 12px">
           <div class="bonus-inner">
             <div class="bonus-icon">🎁</div>
             <div>
               <strong>+$100 Rewards Voucher Bonus</strong><br>
-              Joining from a laptop, desktop, or tablet qualifies you for the bonus on top of your Travel Certificate and gives you a larger screen for the best viewing experience.
+              Use a laptop, desktop, or tablet for the best viewing experience and the additional voucher, subject to the offer’s participation requirements.
             </div>
           </div>
         </div>
 
+        <div class="zoom-note">
+          <strong>Option 1 — Open the presentation now</strong><br>
+          Select the button below, or open Chrome or Safari on your wide-screen device and type <strong>live.travelaht.com/aht</strong> into the address bar. If Zoom is installed, it may open automatically. Otherwise, choose <strong>“Join from your browser”</strong> if that option is offered.
+        </div>
+        <a class="send-btn" id="directWideJoin" href="https://live.travelaht.com/aht" target="_blank" rel="noopener" style="text-align:center;text-decoration:none;display:block">OPEN PRESENTATION ON THIS DEVICE →</a>
+
         <div class="email-box">
-          <label for="email">Enter your email</label>
-          <input id="email" type="email" autocomplete="email" placeholder="you@example.com" required>
-          <div class="email-note">We’ll send the Zoom meeting details to this email.</div>
-          <button class="send-btn" id="sendZoom" type="button">SEND ZOOM DETAILS TO MY EMAIL</button>
+          <strong style="display:block;color:#0f3460;margin-bottom:5px">Option 2 — Email me a copy of the link</strong>
+          <div class="email-note" style="margin:0 0 10px">This is optional. You can join directly above without requesting an email.</div>
+          <label for="email">Email address for the presentation link</label>
+          <input id="email" type="email" autocomplete="email" placeholder="you@example.com">
+          <button class="send-btn" id="sendZoom" type="button">EMAIL ME THE PRESENTATION LINK</button>
           <div class="status" id="status" aria-live="polite"></div>
         </div>
 
         <div class="zoom-note">
-          <strong>Check your inbox.</strong> If you do not see it shortly, check spam or junk.
+          <strong>Tip:</strong> If the Zoom app opens, follow its prompts. If you prefer not to install the app, look for “Join from your browser” on the Zoom page, if available. Please remain in a quiet, stationary location.
         </div>
-        <button class="back" id="wideBack" type="button">← Back</button>
+        <button class="back" id="wideBack" type="button">← Back to device options</button>
       </div>
 
     </div>
@@ -527,7 +535,7 @@ function updateScheduleUI() {
     button.disabled = !live;
 
     if (live) {
-      button.textContent = "CLICK HERE TO START WATCHING THE PRESENTATION";
+      button.textContent = "JOIN THE LIVE PRESENTATION →";
       button.setAttribute("aria-label", "Click here to start watching the presentation");
     } else {
       button.textContent = "WE AREN’T LIVE AT THE MOMENT";
@@ -583,9 +591,8 @@ function openModal() {
   const email = document.getElementById("email");
   const sendButton = document.getElementById("sendZoom");
 
-  email.value = "";
   sendButton.disabled = false;
-  sendButton.textContent = "SEND ZOOM DETAILS TO MY EMAIL";
+  sendButton.textContent = "EMAIL ME THE PRESENTATION LINK";
 
   modal.classList.add("open");
   document.body.style.overflow = "hidden";
@@ -645,6 +652,15 @@ document.getElementById("wideBack").addEventListener("click", () => {
   choices.style.display = "block";
 });
 
+document.getElementById("directWideJoin").addEventListener("click", event => {
+  if (!isLiveNow()) {
+    event.preventDefault();
+    statusBox.className = "status error";
+    statusBox.textContent = "The live session has closed. Please reserve a spot for the next presentation.";
+    updateScheduleUI();
+  }
+});
+
 /* Submit the Zoom-details request through Google Apps Script.
    no-cors means the browser cannot read the response to confirm
    actual delivery, so the visitor is told the request was submitted. */
@@ -652,6 +668,12 @@ document.getElementById("sendZoom").addEventListener("click", async () => {
   const email = document.getElementById("email");
   const button = document.getElementById("sendZoom");
 
+  if (!email.value.trim()) {
+    statusBox.className = "status error";
+    statusBox.textContent = "Enter an email address only if you’d like us to email you a copy of the presentation link. You can also join directly using the button above.";
+    email.focus();
+    return;
+  }
   if (!email.checkValidity()) {
     email.reportValidity();
     return;
@@ -685,19 +707,20 @@ document.getElementById("sendZoom").addEventListener("click", async () => {
       body: new URLSearchParams({
         action: "sendZoomDetails",
         email: email.value.trim(),
-        source: "Cruise Join Now"
+        source: "Cruise Join Now",
+        presentationUrl: MOBILE_LINK
       }).toString()
     });
 
     statusBox.className = "status success";
-    statusBox.textContent = "Your request has been submitted. Please check your inbox for the Zoom details. If they don’t arrive shortly, check spam or junk.";
-    button.textContent = "REQUEST SUBMITTED";
+    statusBox.textContent = "Your email request has been submitted. Please check your inbox for the presentation link. If it doesn’t arrive shortly, check spam or junk. You can also use the direct access option above.";
+    button.textContent = "EMAIL REQUEST SUBMITTED";
 
   } catch (error) {
     statusBox.className = "status error";
     statusBox.textContent = "We couldn’t submit your request. Please try again.";
     button.disabled = false;
-    button.textContent = "SEND ZOOM DETAILS TO MY EMAIL";
+    button.textContent = "EMAIL ME THE PRESENTATION LINK";
   }
 });
 </script>
